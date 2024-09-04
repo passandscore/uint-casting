@@ -52,7 +52,7 @@ const UintCaster = () => {
 
         const isOverflow = truncatedValue > maxValue;
 
-        const decimalValue = truncatedValue.toString();
+        const decimalValue = Math.floor(truncatedValue).toString();
 
         results.push({
           hex: `0x${truncatedHexString}`,
